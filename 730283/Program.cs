@@ -6,10 +6,41 @@ using System.Threading.Tasks;
 
 namespace _730283
 {
-    class Program
+
+    namespace peanut
     {
-        static void Main(string[] args)
+        class Navita
         {
+            static int i = 0;
+            static void Main(string[] args)
+            {
+                MethodA();
+                Console.ReadLine();
+
+            }
+
+            public static void MethodA()
+            {
+                while (Peanut())
+                {
+
+                    Console.WriteLine("i is {0}", i);
+
+                    if (i > 10)
+                    {
+                        return;
+                    }
+                }
+            }
+            public static bool Peanut()
+            {
+                i++;
+                return true;
+            }
         }
     }
+
+
+
+
 }
